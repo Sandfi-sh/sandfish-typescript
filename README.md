@@ -91,6 +91,10 @@ npm pack
 `src/generated` is generated from the public contract. The
 [generation guide](https://github.com/sandfi-sh/openapi) owns updates.
 `.sdk-generated.json` records source hashes and generated file ownership.
+Read the [maintenance guide](https://github.com/Sandfi-sh/openapi/blob/main/MAINTAINING.md)
+for change ownership and the
+[release guide](https://github.com/Sandfi-sh/openapi/blob/main/RELEASING.md)
+for npm publication.
 
 [Examples](https://github.com/sandfi-sh/examples) ·
 [API documentation](https://sandfi.sh/docs#api) ·
