@@ -3,20 +3,16 @@
 The official Fetch-based client for the [Sandfish API](https://sandfi.sh/docs#api).
 The package includes JavaScript modules and TypeScript declarations.
 
-**Preview:** the npm package name is `@sandfi-sh/sdk`. Initial registry
-publication is pending. Node.js 22 or later is required for the examples.
+**Preview:** the npm package name is `@sandfi-sh/sdk`.
+Node.js 22 or later is required for the examples.
 
-## Build from source
+## Install
 
 ```sh
-git clone https://github.com/sandfi-sh/sandfish-typescript.git
-cd sandfish-typescript
-npm ci
-npm run build
+npm install @sandfi-sh/sdk
 ```
 
-Run `npm install /path/to/sandfish-typescript` in your application to use the
-local build. Create an API key at <https://sandfi.sh/account/api>.
+Create an API key at <https://sandfi.sh/account/api>.
 
 ## Submit and wait
 
@@ -85,6 +81,8 @@ be null. Read completeness and supporting evidence with the verdict.
 ## Development
 
 ```sh
+git clone https://github.com/sandfi-sh/sandfish-typescript.git
+cd sandfish-typescript
 npm ci
 npm test
 npm pack
