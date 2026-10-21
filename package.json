@@ -1,0 +1,25 @@
+{
+  "name": "@sandfi-sh/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript and JavaScript SDK for the Sandfish API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {".": {"types": "./dist/index.d.ts", "import": "./dist/index.js"}},
+  "files": ["dist", "README.md", "LICENSE", ".sdk-generated.json"],
+  "sideEffects": false,
+  "engines": {"node": ">=22"},
+  "license": "MIT",
+  "author": "Sandfish <contact@sandfi.sh>",
+  "homepage": "https://sandfi.sh/docs#api",
+  "repository": {"type": "git", "url": "git+https://github.com/Sandfi-sh/sandfish-typescript.git"},
+  "bugs": {"url": "https://github.com/sandfi-sh/sandfish-typescript/issues"},
+  "keywords": ["sandfish", "phishing", "security", "openapi", "sdk"],
+  "publishConfig": {"access": "public"},
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {"typescript": "5.9.3"}
+}
